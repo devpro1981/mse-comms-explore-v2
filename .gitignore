@@ -22,3 +22,33 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+### Gradle ###
+# Gradle wrapper binary (committed intentionally; exclude generated caches)
+!gradle/wrapper/gradle-wrapper.jar
+# Gradle build output and caches — matches recursively at any directory depth
+.gradle/
+build/
+
+### macOS ###
+.DS_Store
+**/.DS_Store
+
+### IntelliJ IDEA ###
+# Project-level IDE directory
+.idea/
+# Module files (one per subproject in a multi-module build)
+*.iml
+*.ipr
+*.iws
+# Shelf directory used by the IDE's local history and VCS shelving
+.shelf/
+# Editor-based HTTP client environment files (may contain credentials)
+http-client.env.json
+http-client.private.env.json
+
+### Kotlin ###
+# Kotlin compiler session data written to the project root
+.kotlin/
+# Kotlin module metadata files (normally inside build/, but excluded globally as a safety net)
+*.kotlin_module
