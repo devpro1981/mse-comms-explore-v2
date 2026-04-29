@@ -1,0 +1,22 @@
+[versions]
+kotlin                     = "2.2.0"
+spring-boot3               = "3.5.12"
+spring-boot4               = "4.0.3"
+spring-dependency-management = "1.1.7"
+
+[libraries]
+# Spring Boot starters — versions are managed by each subproject's BOM
+spring-boot-starter        = { group = "org.springframework.boot", name = "spring-boot-starter" }
+spring-boot-starter-web    = { group = "org.springframework.boot", name = "spring-boot-starter-web" }
+spring-boot-starter-test   = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
+
+# Kotlin runtime
+kotlin-reflect             = { group = "org.jetbrains.kotlin", name = "kotlin-reflect" }
+kotlin-test-junit5         = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit5" }
+
+[plugins]
+kotlin-jvm                   = { id = "org.jetbrains.kotlin.jvm",            version.ref = "kotlin" }
+kotlin-spring                = { id = "org.jetbrains.kotlin.plugin.spring",  version.ref = "kotlin" }
+spring-boot3                 = { id = "org.springframework.boot",            version.ref = "spring-boot3" }
+spring-boot4                 = { id = "org.springframework.boot",            version.ref = "spring-boot4" }
+spring-dependency-management = { id = "io.spring.dependency-management",     version.ref = "spring-dependency-management" }
